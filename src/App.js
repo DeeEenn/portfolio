@@ -11,6 +11,8 @@ function App() {
 
     const [page, setPage] = useState("DefaultPage");
 
+
+
     const handleButtonClick = () => {
         setShowHome(false);
     }
@@ -22,7 +24,7 @@ function App() {
     if(showHome){
         return (
             <div className="flex items-center justify-center h-screen">
-                <Home onButtonClick={handleButtonClick}/>
+                <Home  onButtonClick={handleButtonClick}/>
             </div>
         )
     } else {

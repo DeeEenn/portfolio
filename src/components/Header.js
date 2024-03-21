@@ -1,7 +1,7 @@
 
 function Header({handleNavigation}){
     return (
-        <header className="text-white py-4 fixed top-0 w-full z-50">
+        <header className="text-white py-4 fixed top-0 w-full z-50 bg-white">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center">
                     <h1 className="text-black text-2xl font-thin">
