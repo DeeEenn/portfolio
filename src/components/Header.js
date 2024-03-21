@@ -1,23 +1,20 @@
-function Header(){
+
+function Header({handleNavigation}){
     return (
-        <header>
-            <div>
-                <h1>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">ABOUT ME</a>
-                            </li>
-                            <li>
-                                <a href="#">PORTFOLIO</a>
-                            </li>
-                            <li>
-                                <a href="#">CONTACT</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </h1>
+        <header className="text-white py-4 fixed top-0 w-full z-50">
+            <div className="container mx-auto flex justify-between items-center">
+                <div className="flex items-center">
+                    <h1 className="text-black text-2xl font-thin">
+                        <a onClick={() => handleNavigation("DefaultPage")} href="#default">DAVID NIC</a>
+                    </h1>
+                </div>
+                <nav className="space-x-4 text-2xl text-black font-thin">
+                    <a onClick={() => handleNavigation("AboutMe")} href="#about" className="hover:text-gray-300">ABOUT ME</a>
+                    <a onClick={() => handleNavigation("Portfolio")} href="#portfolio" className="hover:text-gray-300">PORTFOLIO</a>
+                    <a onClick={() => handleNavigation("Contact")} href="#contact" className="hover:text-gray-300">CONTACT</a>
+                </nav>
             </div>
+            <hr className='border-1 m-3'/>
         </header>
     )
 }
