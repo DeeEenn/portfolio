@@ -1,12 +1,19 @@
 
 import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+
 function App() {
   return (
-      <div className='bg-black'>
-        <div>
-          <h1 className='text-7xl text-white text-center'>Hello my name is DAVI!</h1>
-        </div>
-      </div>
+    <div>
+      <Header/>
+      <main>
+        <Home/>
+      </main>
+      <Footer/>
+    </div>
   );
 }
+
 export default App;
